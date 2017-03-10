@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.netvlops.nv.MainActivity">
+
+    <item android:id="@+id/share"
+        android:orderInCategory="100"
+        android:icon="@drawable/share"
+        android:title="Share"
+        app:showAsAction="ifRoom"/>
+</menu>

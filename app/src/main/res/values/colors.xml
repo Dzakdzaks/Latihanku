@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18ace7</color>
+    <color name="colorPrimaryDark">#18ace7</color>
+    <color name="colorAccent">#18ace7</color>
+
+    <color name="colorPrimaryRPL">#2edb10</color>
+    <color name="colorPrimaryDarkRPL">#2edb10</color>
+    <color name="colorAccentRPL">#2edb10</color>
+
+    <color name="colorPrimaryTKJ">#029688</color>
+    <color name="colorPrimaryDarkTKJ">#02796b</color>
+    <color name="colorAccentTKJ">#fec008</color>
+
+    <color name="colorPrimaryT">#2323db</color>
+    <color name="colorPrimaryDarkT">#2323db</color>
+    <color name="colorAccentT">#2323db</color>
+</resources>

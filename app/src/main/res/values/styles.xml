@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTKJ</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTKJ</item>
+        <item name="colorAccent">@color/colorAccentTKJ</item>
+    </style>
+
+    <style name="RPL" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRPL</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRPL</item>
+        <item name="colorAccent">@color/colorAccentRPL</item>
+    </style>
+
+    <style name="TKJ" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryTKJ</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTKJ</item>
+        <item name="colorAccent">@color/colorAccentTKJ</item>
+        </style>
+    <style name="T" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryT</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkT</item>
+        <item name="colorAccent">@color/colorAccentT</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--<style name="Theme.Transparent" parent="android:Theme">-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    <!--</style>-->
+
+</resources>

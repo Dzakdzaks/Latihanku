@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.netvlops.nv">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/apklogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Jurusan"
+            android:label="@string/title_activity_jurusan"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RPL"
+            android:label="@string/title_activity_rpl"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Jurusan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TKJ"
+            android:label="@string/title_activity_tkj"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Jurusan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Guru"
+            android:label="@string/title_activity_guru"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Detail.Detail"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".RPL"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Detail.DetailTKJ"
+            android:label="@string/title_activity_detail_tkj"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TKJ"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Detail.DetailGuru"
+            android:label="@string/title_activity_detail_guru"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Guru"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Kegiatan"
+            android:label="@string/title_activity_kegiatan"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Detail.DetailKegiatan"
+            android:label="@string/title_activity_detail_kegiatan"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Kegiatan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

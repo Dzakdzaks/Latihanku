@@ -1,13 +1,15 @@
 package com.netvlops.nv.Detail;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.netvlops.nv.R;
@@ -18,6 +20,7 @@ public class DetailKegiatan extends AppCompatActivity {
     ImageView img1;
     String gambar, content, title;
     WebView konten;
+    TextView txtisi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +34,13 @@ public class DetailKegiatan extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent share = new Intent(Intent.ACTION_SEND);
+                share.setType("text/plain");
+
+                share.putExtra(Intent.EXTRA_SUBJECT,title);
+                share.putExtra(Intent.EXTRA_TEXT,title+"\n"+txtisi.getText().toString());
+
+                startActivity(Intent.createChooser(share,"Bagikan dengan"));
             }
         });
 
@@ -44,6 +52,8 @@ public class DetailKegiatan extends AppCompatActivity {
         content = getIntent().getStringExtra("desc_keg");
         String contentwvContent = "<html><body>" + content + "</body></html>";
         konten.loadData(contentwvContent, "text/html", null);
+        txtisi = (TextView)findViewById(R.id.txtisi);
+        txtisi.setText(Html.fromHtml(Html.fromHtml(content).toString()));
 
         gambar = getIntent().getStringExtra("img_keg");
         // gambar2 = getIntent().getStringExtra("gambar2");

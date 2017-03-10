@@ -82,16 +82,16 @@ public class RPL extends AppCompatActivity {
     private void loadDataRPL() {
 
         final ProgressDialog pd = new ProgressDialog(this);
-        pd.setTitle("Mohon Tunggu Sebentar");
-        pd.setMessage("Sedang Mengambil Data...");
-        pd.show();
+//        pd.setTitle("Mohon Tunggu Sebentar");
+//        pd.setMessage("Sedang Mengambil Data...");
+//        pd.show();
         requestQueue = Volley.newRequestQueue(RPL.this);
 
         list_data = new ArrayList<HashMap<String, String>>();
         stringRequest = new StringRequest(Request.Method.POST, url_rpl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                pd.dismiss();
+//                pd.dismiss();
                 Log.d("response ", response);
                 try {
                     JSONObject jsonObject = new JSONObject(response);

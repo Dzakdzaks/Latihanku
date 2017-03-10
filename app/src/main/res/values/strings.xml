@@ -6,6 +6,12 @@
     <string name="title_activity_tkj">TKJ</string>
     <string name="title_activity_guru">Guru</string>
     <string name="title_activity_detail">DetailRPL</string>
+    <string name="descnv">
+        "Netvlop's adalah nama angkatan yang ke - 2 di SMK Madinatulquran Jonggol, Netvlop's adalah singkatan"
+        "dari Networkers and Developers. Nama ini adalah keputusan semua anggota Netvlop's."
+        "Netvlop's beranggotakan 57 orang, semuanya adalah laki-laki karena Netvlop's berada di Pesantren"
+        "SMK Madinatulqur'an."
+    </string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

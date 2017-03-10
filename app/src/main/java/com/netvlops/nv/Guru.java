@@ -1,6 +1,5 @@
 package com.netvlops.nv;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,17 +79,17 @@ public class Guru extends AppCompatActivity {
     }
 
     private void loadDataGuru() {
-        final ProgressDialog pd = new ProgressDialog(this);
-        pd.setTitle("Sedang Mengambil Data");
-        pd.setMessage("Mohon Tunggu Sebentar...");
-        pd.show();
+//        final ProgressDialog pd = new ProgressDialog(this);
+//        pd.setTitle("Sedang Mengambil Data");
+//        pd.setMessage("Mohon Tunggu Sebentar...");
+//        pd.show();
         requestQueue = Volley.newRequestQueue(Guru.this);
 
         list_data = new ArrayList<HashMap<String, String>>();
         stringRequest = new StringRequest(Request.Method.POST, url_guru, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                pd.dismiss();
+//                pd.dismiss();
                 Log.d("response ", response);
                 try {
                     JSONObject jsonObject = new JSONObject(response);

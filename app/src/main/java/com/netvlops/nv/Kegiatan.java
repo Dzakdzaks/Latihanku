@@ -81,16 +81,16 @@ public class Kegiatan extends AppCompatActivity {
     private void loadDataKegiatan() {
 
         final ProgressDialog pd = new ProgressDialog(this);
-        pd.setTitle("Mohon Tunggu Sebentar");
-        pd.setMessage("Sedang Mengambil Data...");
-        pd.show();
+//        pd.setTitle("Mohon Tunggu Sebentar");
+//        pd.setMessage("Sedang Mengambil Data...");
+//        pd.show();
         requestQueue = Volley.newRequestQueue(Kegiatan.this);
 
         list_data = new ArrayList<HashMap<String, String>>();
         stringRequest = new StringRequest(Request.Method.POST, url_kegiatan, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                pd.dismiss();
+//                pd.dismiss();
                 Log.d("response ", response);
                 try {
                     JSONObject jsonObject = new JSONObject(response);

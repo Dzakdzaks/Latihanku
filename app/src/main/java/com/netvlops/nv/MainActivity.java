@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,7 +12,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     Animation fade_in, fade_out;
     ViewFlipper viewFlipper;
 
-    private GridLayoutManager lLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "New Call", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), Web.class));
             }
         });
 
@@ -171,6 +168,10 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.share) {
 
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "http://titandroids.blogspot.com");
+            startActivity(Intent.createChooser(shareIntent, "Share link using"));
             return true;
         }
 

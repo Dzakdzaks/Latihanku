@@ -72,16 +72,16 @@ public class TKJ extends AppCompatActivity {
 
     private void loadDataTKJ() {
         final ProgressDialog pd = new ProgressDialog(this);
-        pd.setTitle("Sedang Mengambil Data");
-        pd.setMessage("Mohon Tunggu Sebentar...");
-        pd.show();
+//        pd.setTitle("Sedang Mengambil Data");
+//        pd.setMessage("Mohon Tunggu Sebentar...");
+//        pd.show();
         requestQueue = Volley.newRequestQueue(TKJ.this);
 
         list_data = new ArrayList<HashMap<String, String>>();
         stringRequest = new StringRequest(Request.Method.POST, url_tkj, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                pd.dismiss();
+//                pd.dismiss();
                 Log.d("response ", response);
                 try {
                     JSONObject jsonObject = new JSONObject(response);

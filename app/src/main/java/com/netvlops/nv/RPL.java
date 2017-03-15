@@ -115,7 +115,7 @@ public class RPL extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 //Toast.makeText(RPL.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-                Toast.makeText(RPL.this, "Tidak Ada Sambungan Internet", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RPL.this, "Not Connected To Internet", Toast.LENGTH_SHORT).show();
             }
 
         }
